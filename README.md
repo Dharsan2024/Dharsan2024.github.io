@@ -18,27 +18,27 @@ A modern Flask web application for air quality analysis from images, with dynami
 - Supports probability distribution visualization for model outputs
 
 🧩 Technical Stack
--**Frontend**: HTML5, CSS3, JavaScript (ES6), Jinja2 Templates
--**Backend**: Python 3.x, Flask, Flask-CORS
--**Model Serving**: TensorFlow / Keras / PyTorch
--**Visualization**: OpenCV, Matplotlib, Chart.js / D3.js
--**Styling Framework**: TailwindCSS / Bootstrap (optional)
--**Animations**: Anime.js, AOS, GSAP
--**Data Handling**: NumPy, Pandas
+- **Frontend**: HTML5, CSS3, JavaScript (ES6), Jinja2 Templates
+- **Backend**: Python 3.x, Flask, Flask-CORS
+- **Model Serving**: TensorFlow / Keras / PyTorch
+- **Visualization**: OpenCV, Matplotlib, Chart.js / D3.js
+- **Styling Framework**: TailwindCSS / Bootstrap (optional)
+- **Animations**: Anime.js, AOS, GSAP
+- **Data Handling**: NumPy, Pandas
 
 📋 Requirements
 
 Python Dependencies
 
--`flask` - Backend web framework
--`flask-cors` - Cross-origin resource sharing
--`numpy` - Data processing
--`pandas` - Data handling
--`tensorflow / torch` - ML model
--`opencv-python` - Image preprocessing
--`matplotlib` - Grad-CAM visualization
--`chart.js / plotly` - Data visualization
--`gunicorn` - WSGI server
+- `flask` - Backend web framework
+- `flask-cors` - Cross-origin resource sharing
+- `numpy` - Data processing
+- `pandas` - Data handling
+- `tensorflow / torch` - ML model
+- `opencv-python` - Image preprocessing
+- `matplotlib` - Grad-CAM visualization
+- `chart.js / plotly` - Data visualization
+- `gunicorn` - WSGI server
 
 🚀 Quick Start
 
@@ -51,9 +51,9 @@ cd Dharsan2024.github.io
 
 2.Create and activate a virtual environment
 
--python -m venv venv
--venv\Scripts\activate      # Windows
--source venv/bin/activate   # Linux/Mac
+- python -m venv venv
+- venv\Scripts\activate      # Windows
+- source venv/bin/activate   # Linux/Mac
 
 3.Install dependencies
 ```bash
@@ -65,5 +65,6 @@ pip install -r requirements.txt
 python app.py
  ```
 Then open your browser at: http://127.0.0.1:5000
+
 
 
