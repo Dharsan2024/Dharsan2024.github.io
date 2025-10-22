@@ -46,7 +46,7 @@ Installation
 1.Clone the repository
   ```bash
 git clone https://github.com/Dharsan2024/Image-based-air-quality-analyzer.git
-cd Dharsan2024.github.io
+cd Image-based-air-quality-analyzer
  ```
 
 2.Create and activate a virtual environment
@@ -65,6 +65,7 @@ pip install -r requirements.txt
 python app.py
  ```
 Then open your browser at: http://127.0.0.1:5000
+
 
 
 
