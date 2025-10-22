@@ -45,7 +45,7 @@ Python Dependencies
 Installation
 1.Clone the repository
   ```bash
-git clone https://github.com/Dharsan2024/Dharsan2024.github.io.git
+git clone https://github.com/Dharsan2024/Image-based-air-quality-analyzer.git
 cd Dharsan2024.github.io
  ```
 
@@ -65,6 +65,7 @@ pip install -r requirements.txt
 python app.py
  ```
 Then open your browser at: http://127.0.0.1:5000
+
 
 
 
