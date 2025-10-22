@@ -1,106 +1,133 @@
-A visually stunning Flask-based web application designed for air pollution detection using an integrated Machine Learning (ML) model.
-The app combines real-time predictions, data visualization, and modern UI design principles to deliver both scientific accuracy and a premium user experience.
+A modern Flask web application for air pollution detection with dynamic UI, real-time predictions, and interactive visualizations.
 
-🚀 Features
+✨ Features
+🎨 Modern & Interactive UI
+
+Sleek glassmorphism + gradient design
+
+Animated drag-and-drop image upload zone with glowing hover effect
+
+Real-time prediction display with smooth transitions and animated progress bars
+
+Interactive Grad-CAM visualization with before/after comparison slider
+
+Dynamic AQI gauge with color-coded health zones (green/yellow/red)
+
+Animated pollution metrics cards showing PM2.5, PM10, and AQI with pulse effects
+
+Beautiful history timeline with hover animations
+
+Animated probability indicators showing prediction confidence
+
+Mobile-first responsive design
+
+Dark mode toggle with persistent theme preference
+
 🧠 Machine Learning Integration
 
-Integrates a pre-trained air pollution detection model for image or data-based inference.
+Integrates a pre-trained CNN model for pollution detection
 
-Provides real-time predictions with probability outputs and visual indicators.
+Grad-CAM-based explainability highlights influential image regions
 
-Includes Grad-CAM visualization for model interpretability, allowing users to understand which image regions influence predictions.
+Real-time predictions rendered instantly
 
-🎨 Dynamic & Modern UI
-
-Built using HTML5, CSS3, JavaScript (ES6), and Flask templating (Jinja2).
-
-Designed with Glassmorphism and Gradient UI elements for a clean, futuristic interface.
-
-Supports Dark Mode with persistent theme storage using localStorage.
-
-💫 Key Frontend Features
-Feature	Description
-🖼️ Animated Drag-and-Drop Upload	Smooth drag-and-drop image upload zone with glowing hover effects, instant file preview, and progress animation during upload.
-⚙️ Real-time Prediction Display	Dynamic card transitions and animated progress bars to visualize ML prediction results instantly.
-🔍 Interactive Grad-CAM	Side-by-side comparison slider displaying original vs Grad-CAM heatmap overlay for interpretability.
-🌈 Dynamic AQI Gauge	Circular gauge with animated needle and color-coded health zones (Green / Yellow / Red).
-🌬️ Pollution Metrics Cards	Animated metric cards showing PM2.5, PM10, and AQI with subtle glowing pulse effects.
-🕒 History Timeline	Card-based timeline of previous predictions with hover transitions and date-time metadata.
-📊 Probability Visualization	Circular animated progress indicators showing prediction confidence levels.
-📱 Responsive & Mobile-first	Optimized for all devices using CSS Flexbox/Grid and media queries for fluid scaling.
-🌘 Dark Mode Toggle	Persistent theme preference using JavaScript and CSS variables.
+Supports probability distribution visualization for model outputs
 
 🧩 Technical Stack
-Layer	Technology
-Frontend	HTML5, CSS3, JavaScript (Vanilla/ES6), Jinja2 Templates
-Backend	Python 3.x, Flask, Flask-CORS
-Model Serving	TensorFlow / Keras / PyTorch (depending on your ML model)
-Visualization	Grad-CAM (OpenCV + Matplotlib), Chart.js / D3.js for gauge and progress charts
-Styling Framework	TailwindCSS / Bootstrap (optional)
-Animations	Anime.js / AOS (Animate On Scroll) / GSAP
-Data Handling	NumPy, Pandas
-Deployment	Gunicorn + Nginx (for production) / GitHub Pages (for docs/UI showcase)
 
-🧠 System Architecture
-+--------------------------+
-|        Frontend          |
-|  - Upload UI (HTML/CSS)  |
-|  - Prediction Results     |
-|  - Animated Gauges        |
-+------------+-------------+
-             |
-             v
-+--------------------------+
-|        Flask API         |
-|  - Handles file uploads  |
-|  - Calls ML model        |
-|  - Returns JSON results  |
-+------------+-------------+
-             |
-             v
-+--------------------------+
-|   Machine Learning Model |
-|  - Pre-trained CNN model |
-|  - Grad-CAM computation  |
-|  - AQI Estimation        |
-+--------------------------+
+Frontend: HTML5, CSS3, JavaScript (ES6), Jinja2 Templates
 
-⚙️ Setup Instructions
+Backend: Python 3.x, Flask, Flask-CORS
 
-Clone the Repository
+Model Serving: TensorFlow / Keras / PyTorch
+
+Visualization: OpenCV, Matplotlib, Chart.js / D3.js
+
+Styling Framework: TailwindCSS / Bootstrap (optional)
+
+Animations: Anime.js, AOS, GSAP
+
+Data Handling: NumPy, Pandas
+
+Deployment: Gunicorn + Nginx / Render / AWS / Heroku
+
+🏗️ Architecture Overview
+
+User Interface
+
+Drag & drop upload zone
+
+AQI gauge & Grad-CAM visualization
+
+Animated metric cards & history timeline
+
+Flask Backend
+
+Handles routes & uploads
+
+Calls ML model for inference
+
+Returns JSON predictions
+
+ML Model & Processing
+
+CNN-based air pollution detection
+
+Grad-CAM visualization
+
+AQI computation logic
+
+Visualization & Analytics
+
+Graphs & gauges
+
+History timeline
+
+Probability indicators
+
+📋 Requirements
+Python Dependencies
+
+flask - Backend web framework
+
+flask-cors - Cross-origin resource sharing
+
+numpy - Data processing
+
+pandas - Data handling
+
+tensorflow / torch - ML model
+
+opencv-python - Image preprocessing
+
+matplotlib - Grad-CAM visualization
+
+chart.js / plotly - Data visualization
+
+gunicorn - WSGI server
+
+🚀 Quick Start
+Installation
+
+Clone the repository
 
 git clone https://github.com/Dharsan2024/Dharsan2024.github.io.git
 cd Dharsan2024.github.io
 
 
-Create a Virtual Environment
+Create and activate a virtual environment
 
 python -m venv venv
-venv\Scripts\activate   # (Windows)
-source venv/bin/activate  # (Linux/Mac)
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # Linux/Mac
 
 
-Install Requirements
+Install dependencies
 
 pip install -r requirements.txt
 
-
-Run Flask Server
-
+Running the Application
 python app.py
 
 
-Then open: http://127.0.0.1:5000
-
-📈 Future Enhancements
-
-🌦️ Integration with real-time weather and AQI APIs
-
-🌍 Live pollution map with geospatial visualization
-
-☁️ Cloud deployment via Render / AWS / Heroku
-
-🧭 AI explainability dashboard with multi-layer Grad-CAM
-
-📲 PWA (Progressive Web App) version for mobile users
-
+Then open your browser at: http://127.0.0.1:5000
